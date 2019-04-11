@@ -2,11 +2,14 @@ package domain;
 
 public class Destination {
     private String destName;
+    private int destId;
 
     private Destination(){}
 
-    private Destination(Builder builder) {
+    private Destination(Builder builder)
+    {
         this.destName = builder.destName;
+        this.destId = builder.destId;
     }
 
     public String getdestName() {
@@ -16,9 +19,15 @@ public class Destination {
     public static class Builder{
 
         private String destName;
+        private int destId;
 
         public Builder destName(String destName) {
             this.destName = destName;
+            return this;
+        }
+
+        public Builder destId (int destId) {
+            this.destId = destId;
             return this;
         }
 
@@ -32,6 +41,7 @@ public class Destination {
     public String toString() {
         return "Destination{" +
                 "destName='" + destName + '\'' +
+                ", destId=" + destId +
                 '}';
     }
 }
