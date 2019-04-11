@@ -2,7 +2,7 @@ package domain;
 
 public class Destination {
     private String destName;
-    private int destId;
+    private String destId;
 
     private Destination(){}
 
@@ -19,14 +19,14 @@ public class Destination {
     public static class Builder{
 
         private String destName;
-        private int destId;
+        private String destId;
 
         public Builder destName(String destName) {
             this.destName = destName;
             return this;
         }
 
-        public Builder destId (int destId) {
+        public Builder destId (String destId) {
             this.destId = destId;
             return this;
         }
