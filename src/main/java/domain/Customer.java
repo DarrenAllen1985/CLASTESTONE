@@ -5,7 +5,8 @@ import javafx.util.Builder;
 import java.util.Set;
 
 public class Customer {
-    private String custName,custSurname;
+    private String custName;
+    private String custSurname;
     private int custID;
     private Set<Destination> Destinations;
 
